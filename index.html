@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa islami" />
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar col-md-10 col-sm-12 navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a href="index.html" class="logo">
+              <h1>MyPortfolio</h1>
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav mt-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div
+            class="header-date col-md-2 text-center d-flex align-items-center"
+          >
+            <p class="m-0" id="date">2023-04-22, 10:23PM</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="hero d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="image">
+              <img class="img-fluid" src="assets/img/me.jpg" alt="My Image" />
+            </div>
+            <h1>
+              Hi, I'm <span>Mostafa islami</span>, a Web Developer from Herat
+              City
+            </h1>
+            <p>
+              A self-started web developer having 2+ years of experience in
+              developing small scale to middle and enterprise-scale projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+    <main>
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-3">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>13th district, Herat, 3001</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-lg-3">
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>mostafaislami2019@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-lg-3">
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <p>+93787083214</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+          </div>
+
+          <div class="row justify-content-center mt-4">
+            <div class="col-lg-9">
+              <form action="#" role="form" class="email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    id="message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center mt-3">
+                  <button type="submit" id="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+      <!-- ======= Gallery Section ======= -->
+      <section id="gallery" class="gallery">
+        <div class="container-fluid">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img
+                  src="assets/img/gallery/me1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div
+                  class="gallery-link d-flex align-items-center justify-content-center"
+                >
+                  <a
+                    href="assets/img/gallery/me1.jpg"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-arrows-angle-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img
+                  src="assets/img/gallery/me2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div
+                  class="gallery-link d-flex align-items-center justify-content-center"
+                >
+                  <a
+                    href="assets/img/gallery/me2.jpg"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-arrows-angle-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img
+                  src="assets/img/gallery/me3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div
+                  class="gallery-link d-flex align-items-center justify-content-center"
+                >
+                  <a
+                    href="assets/img/gallery/me3.jpg"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-arrows-angle-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+          </div>
+        </div>
+      </section>
+      <!-- End Gallery Section -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>MyPortfolio</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by
+          <a href="mailto:mostafaislami2019@gmail.com">Mostafa islami</a>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <!-- End Footer -->
+    <script src="assets/vendor/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

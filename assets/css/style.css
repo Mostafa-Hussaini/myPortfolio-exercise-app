@@ -1,0 +1,323 @@
+/* Font  */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap");
+
+/* Colors */
+:root {
+  --color-default: #fafafa;
+  --color-primary: #2761a7;
+}
+:root {
+  scroll-behavior: "smooth";
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3879c9;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oswald", "Roboto", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 30px 0;
+  background-color: #000;
+}
+
+.header .logo {
+  transition: 0.3s;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  .header .logo h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-date {
+    display: block !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 30vh;
+  background: #000;
+  background-size: cover;
+  position: relative;
+  padding: 140px 0 60px 0;
+}
+.hero .image {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-grey-700);
+  margin: auto;
+}
+
+.hero h1 {
+  margin: 15px 0 10px 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero h1 span {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.hero h1 span:before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-primary);
+  z-index: -1;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item {
+  margin-top: 40px;
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: var(--color-primary);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #222425;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h4 {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.contact .info-item:hover i {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.contact .email-form {
+  width: 100%;
+}
+
+.contact .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+  background-color: var(--color-secondary);
+  border: 1px solid #2e3133;
+  color: #fff;
+}
+
+.contact .email-form input {
+  height: 44px;
+}
+
+.contact .email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .email-form button[type="submit"] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .email-form button[type="submit"]:hover {
+  background: #3879c9;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery {
+  margin: 50px 0;
+}
+
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery .gallery-item img {
+  transition: 0.3s;
+}
+
+.gallery .gallery-link {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.gallery .gallery-link .preview-link {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  line-height: 1.2;
+  margin: 30px 8px 0 8px;
+}
+
+.gallery .gallery-link .preview-link:hover {
+  color: #fff;
+}
+
+.gallery .gallery-item:hover .gallery-link {
+  opacity: 1;
+}
+
+.gallery .gallery-item:hover .preview-link {
+  margin-top: 0;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  margin-top: 30px;
+  padding: 30px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer .copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .credits {
+  padding-top: 6px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .credits a {
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Scroll top button
+--------------------------------------------------------------*/
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    background: var(--color-primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .scroll-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .scroll-top:hover {
+    background: #3879c9;
+    color: #fff;
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+  }
