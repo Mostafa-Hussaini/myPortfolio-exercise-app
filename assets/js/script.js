@@ -16,12 +16,12 @@ const glightbox = GLightbox({
  * Page Navigation
  */
 
-document.querySelectorAll(".nav-link").forEach((el) => {
-  el.addEventListener("click", (e) => {
-    e.preventDefault();
-    const id = el.getAttribute("href");
+document.querySelector(".navbar-nav").addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target.classList.contains("nav-link")) {
+    const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({
       behavior: "smooth",
     });
-  });
+  }
 });
