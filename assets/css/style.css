@@ -6,9 +6,6 @@
   --color-default: #fafafa;
   --color-primary: #2761a7;
 }
-:root {
-  scroll-behavior: "smooth";
-}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -66,12 +63,6 @@ h5 {
 @media (max-width: 575px) {
   .header .logo h1 {
     font-size: 26px;
-  }
-}
-
-@media (max-width: 992px) {
-  .header-date {
-    display: block !important;
   }
 }
 
@@ -292,32 +283,32 @@ h5 {
 # Scroll top button
 --------------------------------------------------------------*/
 .scroll-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: -15px;
-    z-index: 99999;
-    background: var(--color-primary);
-    width: 44px;
-    height: 44px;
-    border-radius: 50px;
-    transition: all 0.4s;
-  }
-  
-  .scroll-top i {
-    font-size: 24px;
-    color: #fff;
-    line-height: 0;
-  }
-  
-  .scroll-top:hover {
-    background: #3879c9;
-    color: #fff;
-  }
-  
-  .scroll-top.active {
-    visibility: visible;
-    opacity: 1;
-    bottom: 15px;
-  }
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: #3879c9;
+  color: #fff;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
