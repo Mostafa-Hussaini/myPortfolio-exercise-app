@@ -8,7 +8,7 @@ const header = document.querySelector("#header");
 const aboutSection = document.querySelector("#about");
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
-
+const labelDate = document.querySelector("#date");
 /**
  * Initiate glightbox
  */
@@ -20,6 +20,25 @@ const glightbox = GLightbox({
  * Date & time
  */
 
+const options = {
+  hour: "numeric",
+  minute: "numeric",
+  second: "numeric",
+  day: "numeric",
+  month: "numeric",
+  year: "numeric",
+};
+
+const locale = navigator.language;
+const currentDate = new Intl.DateTimeFormat("en-US", options);
+
+const dateUpdater = () => {
+  const date = new Date();
+  const formattedDateTime = currentDate.format(date);
+  labelDate.textContent = formattedDateTime;
+};
+
+setInterval(dateUpdater, 1000);
 /**
  *  Scroll to Top
  */
