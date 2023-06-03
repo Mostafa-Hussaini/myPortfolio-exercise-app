@@ -30,7 +30,7 @@ const options = {
 };
 
 const locale = navigator.language;
-const currentDate = new Intl.DateTimeFormat("en-US", options);
+const currentDate = new Intl.DateTimeFormat(locale, options);
 
 const dateUpdater = () => {
   const date = new Date();
