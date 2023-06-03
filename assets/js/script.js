@@ -34,8 +34,7 @@ const currentDate = new Intl.DateTimeFormat("en-US", options);
 
 const dateUpdater = () => {
   const date = new Date();
-  const formattedDateTime = currentDate.format(date);
-  labelDate.textContent = formattedDateTime;
+  labelDate.textContent = currentDate.format(date);
 };
 
 setInterval(dateUpdater, 1000);
@@ -93,7 +92,7 @@ const navLinkActive = (entries) => {
 
 const navLinkOptions = {
   root: null,
-  threshold: 0.7,
+  threshold: 0.6,
 };
 
 const sectionObserver = new IntersectionObserver(navLinkActive, navLinkOptions);
